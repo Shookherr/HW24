@@ -31,3 +31,8 @@ def perform_query() -> Union[Response, Tuple[Response, int]]:
 
     # return app.response_class('', content_type="text/plain")
     return jsonify(result)
+
+
+@main_bp.route('/ping', methods=['GET'])
+def ping():
+    return 'ping'
