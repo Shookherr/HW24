@@ -1,0 +1,10 @@
+[Unit]
+Description=Flask App Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/shoo/HW24
+ExecStart=/home/shoo/HW24/venv/bin/python main.py
+
+[Install]
+WantedBy=multi-user.target
